@@ -132,10 +132,12 @@
    */
   let preloader = select('#preloader');
   if (preloader) {
-    window.addEventListener('load', () => {
-      preloader.remove()
+    window.addEventListener('DOMContentLoaded', () => {
+      preloader.remove();
     });
+    setTimeout(() => preloader.remove(), 4000);
   }
+
 
   /**
    * Hero type effect
