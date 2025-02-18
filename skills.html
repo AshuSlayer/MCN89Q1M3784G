@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skillset</title>
+
+  <!-- Official Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background-color:#007aff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 30px;
+      animation: fadeInTop 1.5s ease-out forwards;
+    
+    }
+
+ @keyframes fadeInTop {
+      0% {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(1px);
+      }
+    }
+
+    ul {
+      list-style: none;
+      padding: 30px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
+      gap: 30px;
+      max-width: 1000px;
+      width: 100%;
+      font-size: 14px;
+    }
+    li {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      border: 1px solid #007aff;
+      border-radius: 8px;
+      background: #fff;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+      transition: all 0.4s ease-in-out;
+      text-align: center;
+      cursor: pointer;
+      aspect-ratio: 1 / 2;
+      box-sizing: border-box;
+      user-select: none; /* Prevents text selection and typing cursor */
+    }
+    li span {
+      margin-top: 10px;
+    }
+    li:hover, li:active { /* Hover effect now applies on mobile touch */
+      background: #007aff;
+      color: #fff;
+      transform: translateY(-2px) scale(1.3); /* Restoring original scale value */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .icon {
+      color: #007aff;
+      font-size: 45px;
+      transition: color 0.5s, transform 0.5s;
+    }
+    li:hover .icon, li:active .icon {
+      color: #fff;
+      transform: scale(1.7); /* Restoring original icon scale value */
+    }
+  }
+  </style>
+</head>
+<body>
+  <ul>
+    <li>
+      <i class="fa-brands fa-html5 icon"></i>
+      <span>HTML5</span>
+    </li>
+     <li>
+      <i class="fa-brands fa-css3-alt icon"></i>
+      <span>CSS</span>
+    </li>
+    <li>
+      <i class="fa-brands fa-js icon"></i>
+      <span>JavaScript</span>
+    </li>
+    <li>
+     <img src=vs.svg class="icon">
+      <span>Visual Studio</span>
+    </li>
+    <li>
+      <i class="fa-brands fa-angular icon"></i>
+      <span>Angular</span>
+    </li>
+    <li>
+    <i class="fa-brands fa-node icon"></i>
+      <span>NodeJS</span>
+    </li>
+    <li>
+      <i class="fa-solid fa-code icon"></i>
+      <span>.Net</span>
+    </li>
+    <li>
+      <i class="fa-brands fa-wordpress icon"></i>
+      <span>WordPress</span>
+    </li>
+    <li>
+      <i class="fa-brands fa-bootstrap icon"></i>
+      <span>Bootstrap</span>
+    </li>
+    <li>
+      <i class="fa-brands fa-square-git icon"></i>
+      <span>Git Library</span>
+    </li>
+    <li>
+      <i class="fa-solid fa-fire icon"></i>
+      <span>Firebase</span>
+    </li>
+    <li>
+      <i class="fa-solid fa-pen-nib icon"></i>
+      <span>Adobe Illustrator</span>
+    </li>
+    <li>
+      <img src=aps.svg class="icon">
+      <span>Adobe Photoshop</span>
+    </li>
+    <li>
+      <i class="fa-solid fa-video icon"></i>
+      <span>Premiere Pro</span>
+    </li>
+    <li>
+      <i class="fa-solid fa-cube icon"></i>
+      <span>Blender 3D</span>
+    </li>
+  </ul>
+</body>
+<script src=../assets/js/mlock.js></script>
+</html>
